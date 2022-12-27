@@ -1,0 +1,33 @@
+import chromophile as cp
+
+import pytest
+
+
+def test_version():
+    assert cp.__version__ == {{ py_version }}
+
+
+def test_palette_cmap_name_consistency():
+    _ = pytest.importorskip("matplotlib")
+    for name in cp.palette.keys():
+        assert name in cp.cmap.keys()
+    for name in cp.cmap.keys():
+        assert name in cp.palette.keys()
+
+
+def key_attr_consistency(map_obj):
+    for name in map_obj.keys():
+        assert name in dir(map_obj)
+    for name in dir(map_obj):
+        assert name in map_obj.keys()
+    for name, val in map_obj.items():
+        assert val is getattr(map_obj, name)
+
+
+def test_key_attr_consistency_bokeh():
+    key_attr_consistency(cp.palette)
+
+
+def test_key_attr_consistency_matplotlib():
+    _ = pytest.importorskip("matplotlib")
+    key_attr_consistency(cp.cmap)

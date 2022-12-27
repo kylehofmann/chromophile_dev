@@ -1,0 +1,81 @@
+{
+    "name": "cp_mseq_orange_green_blue_purple",
+    "type": "Multisequential",
+    "cmap": {
+        "initial_lightness": 0.11220890255400216,
+        "final_lightness": 0.9122089025544038,
+        "chroma": 0.17648966030331467,
+        "sequence_data": [
+            36.615483378018546,
+            51.49920761480626,
+            142.3622707079997,
+            1.6721578390718562e-09,
+            272.43048141455563,
+            -55.62192573297238,
+            327.18505729036235,
+            -1.1730900666187001e-07
+        ]
+    },
+    "parameters": {
+        "uniform_space": "CAM16UCS",
+        "num_samples_per_sequence": 256,
+        "constraint_samples_per_sequence": 16,
+        "Jp_constraint_samples": 1,
+        "weight_initial_lightness": 0.0,
+        "min_initial_lightness": 0.01,
+        "max_initial_lightness": 0.4,
+        "weight_final_lightness": 0.0,
+        "min_final_lightness": 0.6,
+        "max_final_lightness": 1.0,
+        "weight_chroma": 1.0,
+        "min_chroma": 0.176,
+        "max_chroma": 0.2,
+        "weight_hue_diff": 0.0,
+        "weight_squared_hue_diff": -0.01,
+        "weight_hue_initial_separation": 0.0,
+        "weight_hue_final_separation": 0.0,
+        "weight_lightness_diff": 0.1,
+        "min_lightness_diff": 0.8,
+        "max_lightness_diff": 1.0,
+        "min_hue_diff": [
+            47.829538417427045,
+            -38.77023158636763,
+            -115.6219257303493,
+            -23.1188949749519
+        ],
+        "max_hue_diff": [
+            107.82953841742705,
+            21.22976841363237,
+            -55.62192573034932,
+            36.8811050250481
+        ],
+        "min_initial_hue_separation": -Infinity,
+        "max_initial_hue_separation": Infinity,
+        "min_final_hue_separation": -Infinity,
+        "max_final_hue_separation": Infinity,
+        "center_initial_hue": [
+            27.276176578901065,
+            142.34893371147686,
+            283.032594545643,
+            320.7834647749519
+        ],
+        "span_initial_hue": 20.0,
+        "center_final_hue": 0.0,
+        "span_final_hue": Infinity,
+        "cone": false,
+        "cylinder": false,
+        "allowed_gamut_error": 1e-06
+    },
+    "opt_parameters": {
+        "maxiter": 1000.0,
+        "tol": 1e-15
+    },
+    "post_opt_parameters": {
+        "Jp_final_samples": 64,
+        "reverse": false,
+        "rotate": 0,
+        "sRGB_approximation_maxiter": 100000,
+        "sRGB_approximation_nearby_points": 10,
+        "sRGB_approximation_proof": false
+    }
+}

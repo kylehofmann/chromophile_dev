@@ -1,0 +1,48 @@
+{
+    "name": "cp_cyc_isolum_wide",
+    "type": "Cyclic",
+    "cmap": {
+        "initial_lightness": 0.7243303212592452,
+        "final_lightness": 0.7243303212592452,
+        "chroma": 0.2625377692050809,
+        "sequence_data": -4.1423435886986525e-17
+    },
+    "parameters": {
+        "uniform_space": "CAM16UCS",
+        "num_samples_per_sequence": 360,
+        "constraint_samples_per_sequence": 360,
+        "Jp_constraint_samples": 1,
+        "weight_lightness": 0.0,
+        "min_initial_lightness": 0.05,
+        "max_initial_lightness": 1.0,
+        "weight_initial_lightness": 0.0001,
+        "min_final_lightness": 0.05,
+        "max_final_lightness": 1.0,
+        "weight_final_lightness": 0.0001,
+        "weight_chroma": 1.0,
+        "min_chroma": 0.1,
+        "max_chroma": Infinity,
+        "weight_lightness_diff": 0.0,
+        "min_lightness_diff": 0.0,
+        "max_lightness_diff": 0.0,
+        "center_hue": 0.0,
+        "span_hue": 0.0,
+        "cone": true,
+        "cylinder": false,
+        "allowed_gamut_error": 1e-06,
+        "cone_constraint_samples": 1.0,
+        "cone_final_samples": 64.0
+    },
+    "opt_parameters": {
+        "maxiter": 1000,
+        "tol": 1e-15
+    },
+    "post_opt_parameters": {
+        "Jp_final_samples": 64,
+        "reverse": false,
+        "rotate": 0,
+        "sRGB_approximation_maxiter": 100000,
+        "sRGB_approximation_nearby_points": 10,
+        "sRGB_approximation_proof": false
+    }
+}

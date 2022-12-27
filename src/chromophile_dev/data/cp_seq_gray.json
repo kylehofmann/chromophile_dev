@@ -1,0 +1,29 @@
+{
+    "name": "cp_seq_gray",
+    "type": "Gray",
+    "cmap": {
+        "initial_lightness": 0.0,
+        "final_lightness": 1.0,
+        "chroma": 0.0,
+        "sequence_data": []
+    },
+    "parameters": {
+        "uniform_space": "CAM16UCS",
+        "allowed_gamut_error": 1e-06,
+        "num_samples_per_sequence": 256,
+        "cylinder": false
+    },
+    "opt_parameters": {
+        "maxiter": 1000,
+        "tol": 1e-15,
+        "Jp_constraint_samples": 4
+    },
+    "post_opt_parameters": {
+        "Jp_final_samples": 64,
+        "reverse": false,
+        "rotate": 0,
+        "sRGB_approximation_maxiter": 100000,
+        "sRGB_approximation_nearby_points": 10,
+        "sRGB_approximation_proof": false
+    }
+}

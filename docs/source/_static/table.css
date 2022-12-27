@@ -1,0 +1,11 @@
+.table-col-1-r td:nth-child(1),
+.table-col-2-r td:nth-child(2),
+.table-col-3-r td:nth-child(3),
+.table-col-4-r td:nth-child(4),
+.table-col-5-r td:nth-child(5),
+.table-col-6-r td:nth-child(6),
+.table-col-7-r td:nth-child(7),
+.table-col-8-r td:nth-child(8),
+.table-col-9-r td:nth-child(9) {
+  text-align: right;
+}

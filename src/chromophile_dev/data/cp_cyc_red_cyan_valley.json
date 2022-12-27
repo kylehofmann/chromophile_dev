@@ -1,0 +1,47 @@
+{
+    "name": "cp_cyc_red_cyan_valley",
+    "type": "Cyclic",
+    "cmap": {
+        "initial_lightness": 0.10424014915671506,
+        "final_lightness": 0.949842119494253,
+        "chroma": 0.2,
+        "sequence_data": 329.65,
+        "divergence_type": "valley"
+    },
+    "parameters": {
+        "Jp_constraint_samples": 1,
+        "allowed_gamut_error": 1e-06,
+        "center_hue": 329.65,
+        "cone": false,
+        "constraint_samples_per_sequence": 360,
+        "cylinder": false,
+        "max_chroma": 0.2,
+        "max_final_lightness": 0.99,
+        "max_initial_lightness": 0.4,
+        "max_lightness_diff": 1.0,
+        "min_chroma": 0.2,
+        "min_final_lightness": 0.6,
+        "min_initial_lightness": 0.01,
+        "min_lightness_diff": -1.0,
+        "num_samples_per_sequence": 360,
+        "span_hue": 0.0,
+        "uniform_space": "CAM16UCS",
+        "weight_chroma": 0.0,
+        "weight_final_lightness": 0.0,
+        "weight_initial_lightness": 0.0,
+        "weight_lightness": 0.0,
+        "weight_lightness_diff": 1.0
+    },
+    "opt_parameters": {
+        "maxiter": 1000,
+        "tol": 1e-15
+    },
+    "post_opt_parameters": {
+        "Jp_final_samples": 64,
+        "reverse": false,
+        "rotate": 0,
+        "sRGB_approximation_maxiter": 100000,
+        "sRGB_approximation_nearby_points": 10,
+        "sRGB_approximation_proof": false
+    }
+}

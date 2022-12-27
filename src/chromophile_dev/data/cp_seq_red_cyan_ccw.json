@@ -1,0 +1,60 @@
+{
+    "name": "cp_seq_red_cyan_ccw",
+    "type": "Multisequential",
+    "cmap": {
+        "initial_lightness": 0.09606654928312257,
+        "final_lightness": 0.9490367092377511,
+        "chroma": 0.2,
+        "sequence_data": [
+            17.259884193977214,
+            180.1756739394983
+        ]
+    },
+    "parameters": {
+        "uniform_space": "CAM16UCS",
+        "num_samples_per_sequence": 256,
+        "constraint_samples_per_sequence": 16,
+        "Jp_constraint_samples": 1,
+        "weight_initial_lightness": 0.0,
+        "min_initial_lightness": 0.05,
+        "max_initial_lightness": 0.4,
+        "weight_final_lightness": 0.0,
+        "min_final_lightness": 0.6,
+        "max_final_lightness": 1.0,
+        "weight_chroma": 0.0,
+        "min_chroma": 0.2,
+        "max_chroma": 0.2,
+        "weight_hue_diff": 0.1,
+        "weight_squared_hue_diff": 0.0,
+        "weight_hue_initial_separation": 0.0,
+        "weight_hue_final_separation": 0.0,
+        "weight_lightness_diff": 1.0,
+        "min_lightness_diff": -1.0,
+        "max_lightness_diff": 1.0,
+        "min_hue_diff": 140.0,
+        "max_hue_diff": 200.0,
+        "min_initial_hue_separation": -Infinity,
+        "max_initial_hue_separation": Infinity,
+        "min_final_hue_separation": -Infinity,
+        "max_final_hue_separation": Infinity,
+        "center_initial_hue": 27.276176578901065,
+        "span_initial_hue": 29.999999999999996,
+        "center_final_hue": 0.0,
+        "span_final_hue": Infinity,
+        "cone": false,
+        "cylinder": false,
+        "allowed_gamut_error": 1e-06
+    },
+    "opt_parameters": {
+        "maxiter": 1000,
+        "tol": 1e-15
+    },
+    "post_opt_parameters": {
+        "Jp_final_samples": 64,
+        "reverse": false,
+        "rotate": 0,
+        "sRGB_approximation_maxiter": 100000,
+        "sRGB_approximation_nearby_points": 10,
+        "sRGB_approximation_proof": false
+    }
+}

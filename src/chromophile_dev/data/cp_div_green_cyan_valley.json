@@ -1,0 +1,72 @@
+{
+    "name": "cp_div_green_cyan_valley",
+    "type": "Divergent",
+    "cmap": {
+        "chroma": 0.20000000000000004,
+        "final_lightness": 0.9490367109255814,
+        "initial_lightness": 0.14610097664322896,
+        "sequence_data": [
+            142.2966636008723,
+            -9.999996402293279,
+            142.39666375577488,
+            55.038896299152945
+        ],
+        "divergence_type": "valley"
+    },
+    "parameters": {
+        "Jp_constraint_samples": 1,
+        "allowed_gamut_error": 1e-06,
+        "center_final_hue": [
+            89.99999999999999,
+            239.99999999999997
+        ],
+        "center_initial_hue": [
+            119.99999999999999,
+            119.99999999999999
+        ],
+        "cone": false,
+        "constraint_samples_per_sequence": 16,
+        "cylinder": false,
+        "max_chroma": 0.2,
+        "max_final_hue_separation": Infinity,
+        "max_final_lightness": 1.0,
+        "max_hue_diff": Infinity,
+        "max_initial_hue_separation": -0.1,
+        "max_initial_lightness": 0.4,
+        "max_lightness_diff": 1.0,
+        "min_chroma": 0.2,
+        "min_final_hue_separation": -Infinity,
+        "min_final_lightness": 0.6,
+        "min_hue_diff": [
+            -9.999999999999991,
+            -359.99999999999994
+        ],
+        "min_initial_hue_separation": -1.0,
+        "min_initial_lightness": 0.05,
+        "min_lightness_diff": 0.8,
+        "num_samples_per_sequence": 256,
+        "span_final_hue": 59.99999999999999,
+        "span_initial_hue": 29.999999999999996,
+        "uniform_space": "CAM16UCS",
+        "weight_chroma": 0.0,
+        "weight_final_lightness": 0.0,
+        "weight_hue_diff": 0.0,
+        "weight_hue_final_separation": 0.0,
+        "weight_hue_initial_separation": 0.0,
+        "weight_initial_lightness": 0.0,
+        "weight_lightness_diff": 1.0,
+        "weight_squared_hue_diff": 0.01
+    },
+    "opt_parameters": {
+        "maxiter": 1000,
+        "tol": 1e-15
+    },
+    "post_opt_parameters": {
+        "Jp_final_samples": 64,
+        "reverse": false,
+        "rotate": 0,
+        "sRGB_approximation_maxiter": 100000,
+        "sRGB_approximation_nearby_points": 10,
+        "sRGB_approximation_proof": false
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "name": "cp_cyc_isolum",
+    "type": "Cyclic",
+    "cmap": {
+        "initial_lightness": 0.33010572243065933,
+        "final_lightness": 0.8301057224318147,
+        "chroma": 0.176161079590626,
+        "sequence_data": 3.8622590703491367e-14
+    },
+    "parameters": {
+        "uniform_space": "CAM16UCS",
+        "num_samples_per_sequence": 360,
+        "constraint_samples_per_sequence": 60,
+        "Jp_constraint_samples": 7,
+        "weight_initial_lightness": 0.0,
+        "min_initial_lightness": 0.05,
+        "max_initial_lightness": 1.0,
+        "weight_final_lightness": 0.0,
+        "min_final_lightness": 0.05,
+        "max_final_lightness": 1.0,
+        "weight_chroma": 1.0,
+        "min_chroma": 0.176,
+        "max_chroma": 0.2,
+        "weight_lightness_diff": 0.1,
+        "min_lightness_diff": 0.5,
+        "max_lightness_diff": 1.0,
+        "center_hue": 0.0,
+        "span_hue": 1e-15,
+        "cone": false,
+        "cylinder": true,
+        "allowed_gamut_error": 1e-06
+    },
+    "opt_parameters": {
+        "maxiter": 1000,
+        "tol": 1e-15
+    },
+    "post_opt_parameters": {
+        "Jp_final_samples": 64,
+        "reverse": false,
+        "rotate": 0,
+        "sRGB_approximation_maxiter": 100000,
+        "sRGB_approximation_nearby_points": 10,
+        "sRGB_approximation_proof": false
+    }
+}
