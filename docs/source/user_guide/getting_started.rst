@@ -27,7 +27,7 @@ imported.
 
 The tools used to develop the Chromophile color maps are in a
 separate package called `chromophile-dev
-<https://github.com/kylehofmann/chromophile-dev/>`_.  Most users
+<https://github.com/kylehofmann/chromophile_dev/>`_.  Most users
 will not need this package.
 
 Usage
