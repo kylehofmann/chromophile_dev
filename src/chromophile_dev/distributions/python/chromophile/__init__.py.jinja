@@ -194,8 +194,15 @@ def _make_rearrangements(name, data):
 
 def _init_mpl(cmaps):
     import numpy as np
+    import matplotlib as mpl
     from matplotlib.colors import ListedColormap
-    from matplotlib.cm import register_cmap
+
+    major, minor, *_ = map(int, mpl.__version__.split('.'))
+    if (major, minor) >= (3, 6):
+        def register_cmap(name, cm):
+            mpl.colormaps.register(cm)
+    else:
+        from matplotlib.cm import register_cmap
 
     cmap = _attrdict()
     for name, data in cmaps:
@@ -210,8 +217,9 @@ def _init_mpl(cmaps):
         cmap[name] = mpl_cmap
 
     for alias, name in _expanded_aliases:
-        register_cmap(alias, cmap[name])
-        cmap[alias] = cmap[name]
+        aliased_cmap = ListedColormap(cmap[name].colors, name=alias)
+        register_cmap(alias, aliased_cmap)
+        cmap[alias] = aliased_cmap
     return cmap
 
 
