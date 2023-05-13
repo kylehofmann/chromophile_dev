@@ -59,6 +59,15 @@ def _context_version():
         }
 
 
+def _context_py_cmaps(cmap_index):
+    header = "_CMAPS = ("
+    footer = "    )"
+    lines = []
+    for cmap_name, _ in cmap_index:
+        lines.append(f"    {cmap_name!r},")
+    return '\n'.join([header] + lines + [footer])
+
+
 def _context_py_index(cmap_index):
     header = "_INDEX = ("
     footer = "    )"
@@ -98,6 +107,7 @@ def _context_py_cp_peacock_example(cmaps, aliases):
 def _context_python(cmaps, aliases, cmap_index):
     return {
         'py_data_path': DISTRIBUTIONS['python']['data_path'],
+        'py_cmaps': _context_py_cmaps(cmap_index),
         'py_index': _context_py_index(cmap_index),
         'py_aliases': _context_py_aliases(aliases),
         'py_cp_peacock_example': _context_py_cp_peacock_example(

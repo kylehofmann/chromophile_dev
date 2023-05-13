@@ -3,6 +3,11 @@ import chromophile as cp
 import pytest
 
 
+{{ py_cmaps }}
+
+{{ py_aliases }}
+
+
 def test_version():
     assert cp.__version__ == {{ py_version }}
 
@@ -31,3 +36,29 @@ def test_key_attr_consistency_bokeh():
 def test_key_attr_consistency_matplotlib():
     _ = pytest.importorskip("matplotlib")
     key_attr_consistency(cp.cmap)
+
+
+def test_base_cmaps():
+    _ = pytest.importorskip("matplotlib")
+    for name in _CMAPS:
+        assert name in cp.cmap.keys()
+        assert cp.cmap[name].name == name
+
+
+def test_base_palettes():
+    for name in _CMAPS:
+        assert name in cp.palette.keys()
+
+
+def test_cmap_aliases():
+    _ = pytest.importorskip("matplotlib")
+    for alias, name in _ALIASES:
+        assert alias in cp.cmap.keys()
+        assert cp.cmap[alias].name == alias
+        assert (cp.cmap[name].colors == cp.cmap[alias].colors).all()
+
+
+def test_palette_aliases():
+    for alias, name in _ALIASES:
+        assert alias in cp.palette.keys()
+        assert cp.palette[alias] == cp.palette[name]
