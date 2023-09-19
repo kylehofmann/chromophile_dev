@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Version 1.0.3
+-------------
+
+Released 2023-09-18
+
+-   Support for Matplotlib 3.8.
+
 Version 1.0.2
 -------------
 
