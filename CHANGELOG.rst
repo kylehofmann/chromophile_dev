@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Version 1.0.4
+-------------
+
+Released 2023-12-12
+
+-   Support for Python 3.12.
+
 Version 1.0.3
 -------------
 
