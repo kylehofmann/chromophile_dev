@@ -240,10 +240,10 @@ def cmd_print(name, regexp, file):
     print("     - :math:`J'`")
     print("     - :math:`J_0'`")
     print("     - :math:`J_1'`")
-    print("     - :math:`\Delta J'`")
+    print(r"     - :math:`\Delta J'`")
     print("     - :math:`h_0`")
     print("     - :math:`h_1`")
-    print("     - :math:`\Delta h`")
+    print(r"     - :math:`\Delta h`")
 
     for state in sorted(
             states, key=lambda s: (len(s['name'].split('_')), s['name'])
