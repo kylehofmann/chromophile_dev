@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Version 1.0.5
+-------------
+
+Released 2024-05-17
+
+-   Support for Matplotlib 3.9.
+
 Version 1.0.4
 -------------
 
@@ -23,7 +30,6 @@ Released 2023-05-13
 -   Support for Matplotlib 3.6+.
 -   Additional tests.
 
-
 Version 1.0.1
 -------------
 
@@ -31,7 +37,6 @@ Released 2022-12-30
 
 -   Fix link to development repository.
 -   Create CHANGELOG.
-
 
 Version 1.0.0
 -------------
