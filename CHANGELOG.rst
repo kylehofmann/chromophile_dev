@@ -1,6 +1,14 @@
 Changelog
 =========
 
+Version 1.0.6
+-------------
+
+Released 2024-12-06
+
+-   Support for Python 3.13.
+-   End support for Python 3.7 and 3.8 and Matplotlib 3.0, 3.1, and 3.2.
+
 Version 1.0.5
 -------------
 
