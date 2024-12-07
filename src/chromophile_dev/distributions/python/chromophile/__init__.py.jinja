@@ -95,16 +95,10 @@ def _expand_aliases(aliases):
 
 
 def _init_cmaps(index):
-    try:
-        # 3.9+
-        pkg_traversable = importlib.resources.files(__package__)
-    except AttributeError:
-        # 3.7, 3.8
-        data = importlib.resources.read_binary(__package__, '_cmaps.dat')
-    else:
-        cmaps_file = pkg_traversable / '_cmaps.dat'
-        with open(cmaps_file, 'rb') as fp:
-            data = fp.read()
+    pkg_traversable = importlib.resources.files(__package__)
+    cmaps_file = pkg_traversable / '_cmaps.dat'
+    with open(cmaps_file, 'rb') as fp:
+        data = fp.read()
 
     if len(data) % 3 != 0:
         raise ImportError(
